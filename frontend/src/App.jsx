@@ -21,7 +21,7 @@ function LoginPage({ onLogin }) {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API}/token/`, {
+      const response = await axios.post(`${API}/api/token/`, {
         username,
         password,
       });
